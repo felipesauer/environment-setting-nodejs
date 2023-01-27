@@ -15,5 +15,8 @@
     "rules": {
         "no-console": "warn",
         "prettier/prettier": "warn"
+    },
+    "env": {
+        "node": true
     }
 }
