@@ -1,3 +1,4 @@
+
 # Olá Config :wave:
 
 
@@ -14,3 +15,12 @@ Configurações básicas de ambiente para uma API restful em nodejs, o mesm é c
 ### Instalando depenências de desenvolvimento
 
     npm i -D @babel/cli @babel/core @babel/node @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @babel/preset-env @babel/preset-typescript @types/bcryptjs @types/cors @types/date-fns @types/express @types/ioredis @types/jest @types/joi @types/jsonwebtoken @types/redis @types/uuid @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-plugin-module-resolver babel-plugin-transform-typescript-metadata eslint eslint-config-prettier eslint-plugin-prettier jest pettier ts-jest ts-node ts-node-dev tsconfig-paths typescript
+
+### Package.json config "scripts"
+
+    "scripts": { 
+	    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
+	    "typeorm": "typeorm-ts-node-esm -d src/shared/typeorm/data-source",
+	    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
+	    "test": "jest"
+	}
