@@ -7,19 +7,9 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "module": "commonjs",
-        "rootDir": "src",
+        "rootDir": "/",
         "baseUrl": "./",
-        "paths": {
-            "@config/*": [
-                "src/config/*"
-            ],
-            "@modules/*": [
-                "src/modules/*"
-            ],
-            "@shared/*": [
-                "src/shared/*"
-            ]
-        },
+        "paths": {},
         "typeRoots": [
             "./node_modules/@types",
             "@types"
