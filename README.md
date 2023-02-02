@@ -19,8 +19,8 @@ Configurações básicas de ambiente para uma API restful em nodejs, o mesm é c
 ### Package.json config "scripts"
 
     "scripts": { 
-	    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
-	    "typeorm": "typeorm-ts-node-esm -d src/shared/typeorm/data-source",
+	    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules __EXEC_ARQ__",
+	    "typeorm": "typeorm-ts-node-esm -d __EXEC_ARQ__",
 	    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
 	    "test": "jest"
 	}
