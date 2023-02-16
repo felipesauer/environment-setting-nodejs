@@ -2,7 +2,7 @@
 # Olá Config :wave:
 
 
-Configurações básicas de ambiente para uma API restful em nodejs, o mesm é composta por algumas tecnologias.
+Configurações básicas de ambiente em nodejs, o mesmo é composta por algumas tecnologias.
 
 ### Preparando ambiente
 
